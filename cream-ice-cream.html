@@ -15,7 +15,7 @@
             <ul>
                 <li><a href="">Каталог</a>
                     <ul>
-                        <li><a href="cream-ice-cream.html">Сливочное</a></li>
+                        <li><a>Сливочное</a></li>
                         <li><a href="">Щербеты</a></li>
                         <li><a href="">Фруктовый лед</a></li>
                         <li><a href="">Мелорин</a></li>
@@ -26,9 +26,61 @@
             </ul>
         </nav>
         <ul>
-            <li><a href="search-form.html">Поиск</a></li>
-            <li><a href="entry-form.html">Вход</a></li>
-            <li><a href="trash.html">2 товара</a></li>
+            <li>
+                <button aria-label="Поиск"></button>
+                <form action="https://echo.htmlacademy.ru" method="post">
+                    <h2 class="visually-hidden">Форма поиска</h2>
+                    <label for="search-form" class="visually-hidden">Поиск</label>
+                    <input type="text" name="search-form" id="search-form" placeholder="Крем-брюле">
+                </form>
+            </li>
+            <li>
+                <a href="">Вход</a>
+                <section>
+                    <h2 class="visually-hidden">Вход в личный кабинет</h2>
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                        <p>
+                            <label for="login-login" class="visually-hidden">Введите e-mail</label>
+                            <input type="email" name="login-login" id="login-login" placeholder="email@example.com">
+                        </p>
+                        <p>
+                            <label for="login-password" class="visually-hidden">Введите пароль</label>
+                            <input type="password" name="login-password" id="login-password" placeholder="&#183;&#183;&#183;&#183;&#183;&#183;">
+                        </p>
+                        <button type="submit">Войти</button>
+                    </form>
+                    <a href="">Забыли пароль?</a>
+                    <a href="">Новая регистрация</a>
+                </section>
+            </li>
+            <li>
+                <a href="">2 товара</a>
+                <section>
+                    <h2>Корзина</h2>
+                    <table>
+                        <tr>
+                            <td>Удалить</td>
+                            <td><img src="img/item-1.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33"></td>
+                            <td>Пломбир с апельсиновым джемом</td>
+                            <td>1,5 кг х 200 руб.</td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>Удалить</td>
+                            <td><img src="item-3" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33"></td>
+                            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                            <td>1,5 кг х 300 руб.</td>
+                            <td>450 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>Итого: 750 руб.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Оформить заказ</a></td>
+                        </tr>
+                    </table>
+                </section>
+            </li>
         </ul>
         <p>
             с 10 до 20, ежедневно
@@ -188,30 +240,6 @@
             Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
         </p>
     </footer>
-    <section>
-        <h2>Корзина</h2>
-        <div>
-            <img src="img/item-1.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33">
-            <p>
-                <span>Пломбир с апельсиновым джемом</span>
-                <span>1,5 кг х 200 руб.</span>
-                <span>300 руб.</span>
-            </p>
-        </div>
-        <div>
-            <img src="item-3" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
-            <p>
-                <span>Клубничный пломбир с присыпкой из белого шоколада</span>
-                <span>1,5 кг х 300 руб.</span>
-                <span>450 руб.</span>
-            </p>
-        </div>
-        <p>
-            <span>Итого:</span>
-            <span>750 руб.</span>
-        </p>
-        <a href="">Оформить заказ</a>
-    </section>
 </body>
 
 </html>
