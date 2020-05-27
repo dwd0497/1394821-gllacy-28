@@ -29,7 +29,6 @@
             <li>
                 <button aria-label="Поиск"></button>
                 <form action="https://echo.htmlacademy.ru" method="post">
-                    <h2 class="visually-hidden">Форма поиска</h2>
                     <label for="search-form" class="visually-hidden">Поиск</label>
                     <input type="text" name="search-form" id="search-form" placeholder="Крем-брюле">
                 </form>
@@ -67,7 +66,7 @@
                         </tr>
                         <tr>
                             <td>Удалить</td>
-                            <td><img src="item-3" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33"></td>
+                            <td><img src="img/item-3.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33"></td>
                             <td>Клубничный пломбир с присыпкой из белого шоколада</td>
                             <td>1,5 кг х 300 руб.</td>
                             <td>450 руб.</td>
@@ -75,10 +74,8 @@
                         <tr>
                             <td>Итого: 750 руб.</td>
                         </tr>
-                        <tr>
-                            <td><a href="">Оформить заказ</a></td>
-                        </tr>
                     </table>
+                    <a href="">Оформить заказ</a>
                 </section>
             </li>
         </ul>
@@ -96,7 +93,86 @@
         <h1>Сливочное мороженное</h1>
         <section>
             <h2>Фильтр товаров</h2>
-            <!--Здесь будет форма с фильтрами-->
+            <form action="https://echo.htmlacademy.ru" method="GET">
+                <label>
+                    Сортировка:
+                    <select name="sorting" id="sorting-form">
+                        <option value="by-popularity">по популярности</option>
+                        <option value="cheap-first">сначала недорогие</option>
+                        <option value="expensive-first">сначала дорогие</option>
+                        <option value="by-fat">по жирности</option>
+                    </select>
+                </label>
+                <label>
+                    Цена: 100 ₽ – 500 ₽
+                    <!--Здесь будет радиобаттон с двумя ползунками-->
+                </label>
+                <fieldset>
+                    <legend>Жирность:</legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" name="fat" value="0%">
+                                0%
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="fat" value="up-to-10%" checked>
+                                до 10%
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="fat" value="up-to-30%">
+                                до 30%
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="fat" value="above-30%">
+                                выше 30%
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Наполнители:</legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="chocolate" checked>
+                                шоколадные
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="sugar-powders" checked>
+                                сахарные присыпки
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="fruits">
+                                фрукты
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="syrups">
+                                сиропы
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="jams">
+                                джемы
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit">Применить</button>
+            </form>
         </section>
         <section>
             <h2>Список сливочного мороженного</h2>
@@ -211,21 +287,22 @@
                 </li>
             </ul>
             <ul>
+                <li><a aria-label="Стрелка влево"></a></li>
                 <li><a>1</a></li>
                 <li><a href="">2</a></li>
                 <li><a href="">3</a></li>
                 <li><a href="">4</a></li>
                 <li><a href="">5</a></li>
-                <li><a href="">Стрелка</a></li>
+                <li><a href="" aria-label="стрелка вправо"></a></li>
             </ul>
         </section>
     </main>
     <footer>
         <ul>
-            <li><a href="" aria-label="Фейсбук"></a></li>
-            <li><a href="" aria-label="Вконтакте"></a></li>
-            <li><a href="" aria-label="Инстаграмм"></a></li>
-            <li><a href="" aria-label="Твиттер"></a></li>
+            <li><a href="" aria-label="Глейси в Фейсбук"></a></li>
+            <li><a href="" aria-label="Глейси в Вконтакте"></a></li>
+            <li><a href="" aria-label="Глейси в Инстаграмм"></a></li>
+            <li><a href="" aria-label="Глейси в Твиттер"></a></li>
         </ul>
         <ul>
             <li><a href="">Для поставщиков</a></li>
