@@ -71,10 +71,8 @@
                             <td>1,5 кг х 300 руб.</td>
                             <td>450 руб.</td>
                         </tr>
-                        <tr>
-                            <td>Итого: 750 руб.</td>
-                        </tr>
                     </table>
+                    <span>Итого: 750 руб.</span>
                     <a href="">Оформить заказ</a>
                 </section>
             </li>
@@ -94,45 +92,37 @@
         <section>
             <h2>Фильтр товаров</h2>
             <form action="https://echo.htmlacademy.ru" method="GET">
-                <label>
-                    Сортировка:
+                <fieldset>
+                    <legend>Сортировка:</legend>
                     <select name="sorting" id="sorting-form">
-                        <option value="by-popularity">по популярности</option>
+                        <option value="by-popularity" selected="selected">по популярности</option>
                         <option value="cheap-first">сначала недорогие</option>
                         <option value="expensive-first">сначала дорогие</option>
                         <option value="by-fat">по жирности</option>
                     </select>
-                </label>
-                <label>
-                    Цена: 100 ₽ – 500 ₽
-                    <!--Здесь будет радиобаттон с двумя ползунками-->
-                </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Цена:</legend><span>100 ₽ – 500 ₽</span>
+                    <!--Здесь будет input с двумя ползунками-->
+                </fieldset>
                 <fieldset>
                     <legend>Жирность:</legend>
                     <ul>
                         <li>
-                            <label>
-                                <input type="radio" name="fat" value="0%">
-                                0%
-                            </label>
+                            <input type="radio" name="fat" value="0%" id="fat-0">
+                            <label for="fat-0">0%</label>
                         </li>
                         <li>
-                            <label>
-                                <input type="radio" name="fat" value="up-to-10%" checked>
-                                до 10%
-                            </label>
+                            <input type="radio" name="fat" value="up-to-10%" id="fat-up-to-10" checked>
+                            <label for="fat-up-to-10">до 10%</label>
                         </li>
                         <li>
-                            <label>
-                                <input type="radio" name="fat" value="up-to-30%">
-                                до 30%
-                            </label>
+                            <input type="radio" name="fat" value="up-to-30%" id="fat-up-to-30">
+                            <label for="fat-up-to-30">до 30%</label>
                         </li>
                         <li>
-                            <label>
-                                <input type="radio" name="fat" value="above-30%">
-                                выше 30%
-                            </label>
+                            <input type="radio" name="fat" value="above-30%" id="fat-above-30">
+                            <label for="fat-above-30">выше 30%</label>
                         </li>
                     </ul>
                 </fieldset>
@@ -140,34 +130,24 @@
                     <legend>Наполнители:</legend>
                     <ul>
                         <li>
-                            <label>
-                                <input type="checkbox" name="chocolate" checked>
-                                шоколадные
-                            </label>
+                            <input type="checkbox" name="chocolate-filling" id="chocolate-filling" checked>
+                            <label for="chocolate-filling">шоколадные</label>
                         </li>
                         <li>
-                            <label>
-                                <input type="checkbox" name="sugar-powders" checked>
-                                сахарные присыпки
-                            </label>
+                            <input type="checkbox" name="sugar-powder-filling" id="sugar-powder-filling" checked>
+                            <label for="sugar-powder-filling">сахарные присыпки</label>
                         </li>
                         <li>
-                            <label>
-                                <input type="checkbox" name="fruits">
-                                фрукты
-                            </label>
+                            <input type="checkbox" name="fruit-filling" id="fruit-filling">
+                            <label for="fruit-filling">фрукты</label>
                         </li>
                         <li>
-                            <label>
-                                <input type="checkbox" name="syrups">
-                                сиропы
-                            </label>
+                            <input type="checkbox" name="syrup-filling" id="syrup-filling">
+                            <label for="syrup-filling">сиропы</label>
                         </li>
                         <li>
-                            <label>
-                                <input type="checkbox" name="jams">
-                                джемы
-                            </label>
+                            <input type="checkbox" name="jam-filling" id="jam-filling">
+                            <label for="jam-filling">джемы</label>
                         </li>
                     </ul>
                 </fieldset>
@@ -184,6 +164,7 @@
                             <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
                         </a>
                         <p>310 ₽<span>/кг</span></p>
+                        <a href="">Быстрый просмотр</a>
                     </article>
                 </li>
                 <li>
@@ -193,6 +174,7 @@
                             <h3>Сливочно-кофейное с кусочками шоколада</h3>
                         </a>
                         <p>380 ₽<span>/кг</span></p>
+                        <a href="">Быстрый просмотр</a>
                     </article>
                 </li>
                 <li>
@@ -202,6 +184,7 @@
                             <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
                         </a>
                         <p>355 ₽<span>/кг</span></p>
+                        <a href="">Быстрый просмотр</a>
                     </article>
                 </li>
                 <li>
@@ -211,6 +194,7 @@
                             <h3>Сливочное крем-брюле с карамельной подливкой</h3>
                         </a>
                         <p>415 ₽<span>/кг</span></p>
+                        <a href="">Быстрый просмотр</a>
                     </article>
                 </li>
                 <li>
@@ -220,6 +204,7 @@
                             <h3>Сливочное с брусничным джемом</h3>
                         </a>
                         <p>325 ₽<span>/кг</span></p>
+                        <a href="">Быстрый просмотр</a>
                     </article>
                 </li>
                 <li>
@@ -229,6 +214,7 @@
                             <h3>Сливочно-черничное с цельными ягодами черники</h3>
                         </a>
                         <p>410 ₽<span>/кг</span></p>
+                        <a href="">Быстрый просмотр</a>
                     </article>
                 </li>
                 <li>
@@ -238,6 +224,7 @@
                             <h3>Сливочно-лимонное с карамельной присыпкой</h3>
                         </a>
                         <p>315 ₽<span>/кг</span></p>
+                        <a href="">Быстрый просмотр</a>
                     </article>
                 </li>
                 <li>
@@ -247,6 +234,7 @@
                             <h3>Сливочное с шоколадной стружкой</h3>
                         </a>
                         <p>320 ₽<span>/кг</span></p>
+                        <a href="">Быстрый просмотр</a>
                     </article>
                 </li>
                 <li>
@@ -256,6 +244,7 @@
                             <h3>Сливочно-ванильное с кусочками шоколада</h3>
                         </a>
                         <p>440 ₽<span>/кг</span></p>
+                        <a href="">Быстрый просмотр</a>
                     </article>
                 </li>
                 <li>
@@ -265,6 +254,7 @@
                             <h3>Сливочноe с ментоловым сиропом</h3>
                         </a>
                         <p>435 ₽<span>/кг</span></p>
+                        <a href="">Быстрый просмотр</a>
                     </article>
                 </li>
                 <li>
@@ -274,6 +264,7 @@
                             <h3>Сливочное с кусочками черного шоколада</h3>
                         </a>
                         <p>355 ₽<span>/кг</span></p>
+                        <a href="">Быстрый просмотр</a>
                     </article>
                 </li>
                 <li>
@@ -283,17 +274,18 @@
                             <h3>Сливочное с мятным сиропом</h3>
                         </a>
                         <p>420 ₽<span>/кг</span></p>
+                        <a href="">Быстрый просмотр</a>
                     </article>
                 </li>
             </ul>
             <ul>
-                <li><a aria-label="Стрелка влево"></a></li>
+                <li><a aria-label="Предыдущая страница"></a></li>
                 <li><a>1</a></li>
                 <li><a href="">2</a></li>
                 <li><a href="">3</a></li>
                 <li><a href="">4</a></li>
                 <li><a href="">5</a></li>
-                <li><a href="" aria-label="стрелка вправо"></a></li>
+                <li><a href="" aria-label="Следующая страница"></a></li>
             </ul>
         </section>
     </main>
@@ -314,7 +306,7 @@
             <a href="https://htmlacademy.ru/intensive/htmlcss">
                 <img src="img/academy-logo.svg" width="108" height="39" alt="Логотип HTML Academy">
             </a>
-            Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
+            Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2019
         </p>
     </footer>
 </body>
