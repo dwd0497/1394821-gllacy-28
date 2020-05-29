@@ -4,17 +4,22 @@
 <head>
     <meta charset="utf-8">
     <title>Интернет-магазин мороженного Gllacy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a>
+    <header class="header">
+        <nav class="navigation">
+            <a class="header-logo">
                 <img src="img/logo.svg" width="154" height="64" alt="Логотип GllacyShop">
             </a>
-            <ul>
-                <li><a href="">Каталог</a>
+            <ul class="site-navigation">
+                <li>
+                    <a href="">Каталог</a>
                     <ul>
+                        <li><a href="">Новинки</a></li>
                         <li><a href="cream-ice-cream.html">Сливочное</a></li>
                         <li><a href="">Щербеты</a></li>
                         <li><a href="">Фруктовый лед</a></li>
@@ -25,7 +30,7 @@
                 <li><a href="">О компании</a></li>
             </ul>
         </nav>
-        <ul>
+        <ul class="user-interface">
             <li>
                 <button aria-label="Поиск"></button>
                 <form action="https://echo.htmlacademy.ru" method="post">
@@ -35,7 +40,7 @@
             </li>
             <li>
                 <a href="">Вход</a>
-                <section>
+                <section class="modal-login">
                     <h2 class="visually-hidden">Вход в личный кабинет</h2>
                     <form action="https://echo.htmlacademy.ru" method="post">
                         <p>
@@ -145,7 +150,7 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section class="advantages">
             <h2>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</h2>
             <ul>
                 <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
@@ -158,20 +163,22 @@
                     растаять в пути и позволяет сохранить превосходный вкус.</li>
             </ul>
         </section>
-        <article>
+        <article class="news">
             <b>Новое в нашем блоге</b>
             <h2><a href="">10 способов сервировки фруктовых щербетов к столу</a></h2>
         </article>
-        <div>
-            <h2 class="visually-hidden">Форма подписки на рассылку</h2>
-            <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form action="https://echo.htmlacademy.ru" method="post">
-                <label class="visually-hidden">
-                    Введите e-mail
-                    <input type="email" name="subscribe-email" id="subscribe-email" placeholder="email@example.com">
-                </label>
-                <button type="submit">Отправить</button>
-            </form>
+        <div class="mailing">
+            <div class="mailing-wrapper">
+                <h2 class="visually-hidden">Форма подписки на рассылку</h2>
+                <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                <form action="https://echo.htmlacademy.ru" method="post">
+                    <label class="visually-hidden">
+                        Введите e-mail
+                        <input type="email" name="subscribe-email" id="subscribe-email" placeholder="email@example.com">
+                    </label>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
         </div>
         <section>
             <h2 class="visually-hidden">Адрес и контактные данные</h2>
