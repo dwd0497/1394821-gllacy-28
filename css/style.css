@@ -43,15 +43,20 @@ img {
 .site-navigation,
 .site-navigation ul {
     list-style: none;
-    line-height: 18px;
 }
 
 .site-navigation {
     line-height: 18px;
 }
 
+.site-navigation ul {
+    font-size: 14px;
+    line-height: 16px;
+}
+
 .site-navigation>li>a {
     color: white;
+    font-weight: 700;
 }
 
 .site-navigation>li>a:hover {
@@ -68,6 +73,11 @@ img {
 
 .site-navigation ul {
     background-color: #fff;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.site-navigation ul a {
+    color: var(--text-dark);
 }
 
 .site-navigation ul a:hover {
@@ -82,53 +92,55 @@ img {
     background-color: #D07058;
 }
 
-.site-navigation ul a {
-    color: var(--text-dark);
-}
-
 .site-navigation ul li:nth-child(1) {
+    line-height: 18px;
     font-weight: 700;
 }
 
 .user-interface li>button,
 .user-interface li>a {
     color: #fff;
+    font-size: 500;
+    font-size: 14px;
+    line-height: 16px;
+
     background-color: rgba(255, 255, 255, 0.2)
 }
 
 .user-interface li>button:hover,
 .user-interface li>a:hover {
     color: var(--text-dark);
+
     background-color: #fff
 }
 
-.user-interface li:first-child form {
+.user-interface .search-form,
+.modal-login {
     color: var(--text-dark);
 
     background-color: #F8F7F4;
 }
 
-.user-interface li:first-child input,
+.search-form input,
 .modal-login input {
     font: inherit;
     font-size: 14px;
     line-height: 16px;
 }
 
-.modal-login {
-    background-color: #F8F7F4;
-}
-
 .modal-login>a {
     color: var(--text-dark);
+    font-size: 13px;
+    line-height: 15px;
     text-decoration: underline;
 }
 
 .advantages {
     color: var(--text-dark);
 
+
     background-color: #EDE0C5;
-    background-image: url(../img/pattern.png)
+    background-image: url(../img/pattern.png);
 }
 
 .advantages h2 {
@@ -141,19 +153,25 @@ img {
 }
 
 .news {
+    color: var(--text-dark);
+    font-weight: 500;
+
     background-color: #fff;
     background-image: url(../img/strawberry-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.news h2 {
+.news h2 a {
+    color: var(--text-dark);
     font-size: 24px;
     line-height: 30px;
+    font-weight: 700;
 }
 
 .mailing {
     color: var(--text-light-dark);
+
     background: repeating-linear-gradient(-45deg,
             #92cdff 0, #92cdff 10px,
             #f8f7f4 10px, #f8f7f4 20px,
@@ -162,6 +180,11 @@ img {
 }
 
 .mailing-wrapper {
-    color: var(--text-light-dark);
     background-color: #F8F7F4;
+}
+
+.mailing-wrapper input {
+    font: inherit;
+    color: #999;
+    line-height: 24px;
 }
