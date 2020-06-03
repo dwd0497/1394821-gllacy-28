@@ -71,6 +71,7 @@ img {
 }
 
 .btn {
+    font: inherit;
     color: var(--basic-white);
     font-weight: 700;
 
@@ -90,6 +91,15 @@ img {
     color: var(--basic-white);
     font-size: 14px;
     line-height: 16px;
+}
+
+.breadcrumbs-item a:hover {
+    color: var(--active-link-light);
+}
+
+.breadcrumbs-item a:not([href]) {
+    cursor: default;
+    color: var(--basic-white);
 }
 
 
@@ -145,6 +155,7 @@ img {
 
 .site-nav-sublist-item a:not([href]) {
     background-color: #D07058;
+    cursor: default;
 }
 
 .site-nav-sublist-item:nth-child(1) {
@@ -175,30 +186,35 @@ img {
 }
 
 .user-nav .search-form,
-.modal-login {
+.popup-login {
     color: var(--text-dark);
 
     background-color: var(--popup-bg);
 }
 
 .search-form input,
-.modal-login input {
+.popup-login input {
     font: inherit;
     color: var(--text-dark);
     font-size: 14px;
     line-height: 16px;
 }
 
-.modal-login-link {
+.popup-login-link {
     color: var(--text-dark);
     font-size: 13px;
     line-height: 15px;
     text-decoration: underline;
 }
 
-.modal-login-link:hover,
-.modal-login-link:active {
+.popup-login-link:hover,
+.popup-login-link:active {
     color: var(--active-link-dark);
+}
+
+.popup-login-entry-btn {
+    font-size: 18px;
+    line-height: 16px;
 }
 
 .header-contacts {
@@ -339,7 +355,7 @@ img {
 }
 
 .contacts {
-    background-image: url("../img/map.png")
+    background-image: url("../img/map.png");
 }
 
 .contact-information {
@@ -408,7 +424,7 @@ img {
     color: var(--active-link-light);
 }
 
-.feedback-popup {
+.feedback-modal {
     color: var(--text-dark);
 
     background-color: var(--popup-bg);
@@ -443,7 +459,7 @@ img {
     line-height: 18px;
     font-weight: 500;
     color: var(--basic-white);
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--user-nav-btn-bg);
 }
 
 .products-filter select:hover,
