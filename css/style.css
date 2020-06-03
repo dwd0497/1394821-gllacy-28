@@ -450,7 +450,7 @@ img {
 }
 
 .products-filter-apply-btn {
-    color: var(--basic-white);
+    color: ;
     font: inherit;
     font-size: 18px;
     line-height: 18px;
@@ -460,7 +460,7 @@ img {
     border: 2px solid var(--basic-white)
 }
 
-.sorting-field .cart {
+.cart {
     color: var(--text-dark);
     font-size: 13px;
     line-height: 16px;
@@ -476,7 +476,7 @@ img {
     border-radius: 50%;
 }
 
-.cart span {
+.cart-total {
     color: var(--text-dark);
     font-size: 15px;
     line-height: 16px;
