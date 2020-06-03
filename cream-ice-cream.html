@@ -78,28 +78,28 @@
                         </tr>
                     </table>
                     <span>Итого: 750 руб.</span>
-                    <a href="" class="cart-link">Оформить заказ</a>
+                    <a href="" class="btn cart-btn">Оформить заказ</a>
                 </section>
             </li>
         </ul>
         <p class="header-contacts">
             с 10 до 20, ежедневно
-            <a href="tel:+78124502525" class="header-contacts-link">8 812 450-25-25</a>
+            <a href="tel:+78124502525">8 812 450-25-25</a>
         </p>
     </header>
     <main>
-        <ul class="bread-crumbs-list">
-            <li class="bread-crumbs-item"><a href="index.html">Главная</a></li>
-            <li class="bread-crumbs-item"><a href="">Каталог</a></li>
-            <li class="bread-crumbs-item"><a>Сливочное</a></li>
+        <ul class="breadcrumbs-list">
+            <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumbs-item"><a href="">Каталог</a></li>
+            <li class="breadcrumbs-item"><a>Сливочное</a></li>
         </ul>
         <h1 class="page-title">Сливочное мороженное</h1>
-        <section>
+        <section class="products-filter">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            <form action="https://echo.htmlacademy.ru" method="GET">
-                <fieldset>
+            <form action="https://echo.htmlacademy.ru" method="GET" class="products-filter-form">
+                <fieldset class="sorting-field">
                     <legend>Сортировка:</legend>
-                    <select name="sorting" id="sorting-form">
+                    <select name="sorting">
                         <option value="by-popularity" selected="selected">по популярности</option>
                         <option value="cheap-first">сначала недорогие</option>
                         <option value="expensive-first">сначала дорогие</option>
@@ -156,7 +156,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <button type="submit">Применить</button>
+                <button type="submit" class="products-filter-apply-btn">Применить</button>
             </form>
         </section>
         <section class="products">
@@ -283,23 +283,23 @@
                     </article>
                 </li>
             </ul>
-            <ul>
+            <ul class="catalog-pagination-list">
                 <li><a aria-label="Предыдущая страница"></a></li>
-                <li><a>1</a></li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">4</a></li>
-                <li><a href="">5</a></li>
+                <li><a class="catalog-pagination-item-link">1</a></li>
+                <li><a href="" class="catalog-pagination-item-link">2</a></li>
+                <li><a href="" class="catalog-pagination-item-link">3</a></li>
+                <li><a href="" class="catalog-pagination-item-link">4</a></li>
+                <li><a href="" class="catalog-pagination-item-link">5</a></li>
                 <li><a href="" aria-label="Следующая страница"></a></li>
             </ul>
         </section>
     </main>
     <footer class="footer">
         <ul class="socials-list">
-            <li class="socials-item"><a href="" aria-label="Глейси в Фейсбук" class="socials-item-link"></a></li>
-            <li class="socials-item"><a href="" aria-label="Глейси в Вконтакте" class="socials-item-link"></a></li>
-            <li class="socials-item"><a href="" aria-label="Глейси в Инстаграмм" class="socials-item-link"></a></li>
-            <li class="socials-item"><a href="" aria-label="Глейси в Твиттер" class="socials-item-link"></a></li>
+            <li class="socials-item"><a href="" aria-label="Глейси в Фейсбук"></a></li>
+            <li class="socials-item"><a href="" aria-label="Глейси в Вконтакте"></a></li>
+            <li class="socials-item"><a href="" aria-label="Глейси в Инстаграмм"></a></li>
+            <li class="socials-item"><a href="" aria-label="Глейси в Твиттер"></a></li>
         </ul>
         <ul class="footer-nav-list">
             <li class="footer-nav-item"><a href="" class="footer-nav-item-link">Для поставщиков</a></li>
