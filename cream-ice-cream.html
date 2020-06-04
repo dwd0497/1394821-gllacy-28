@@ -98,7 +98,7 @@
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <form action="https://echo.htmlacademy.ru" method="GET" class="products-filter-form">
                 <fieldset class="sorting-field">
-                    <legend>Сортировка:</legend>
+                    <legend class="sorting-field-title">Сортировка:</legend>
                     <select name="sorting">
                         <option value="by-popularity" selected="selected">по популярности</option>
                         <option value="cheap-first">сначала недорогие</option>
@@ -111,8 +111,8 @@
                     <!--Здесь будет input с двумя ползунками-->
                 </fieldset>
                 <fieldset>
-                    <legend>Жирность:</legend>
-                    <ul>
+                    <legend class="fat-field-title">Жирность:</legend>
+                    <ul class="fat-field-list">
                         <li>
                             <input type="radio" name="fat" value="0%" id="fat-0">
                             <label for="fat-0">0%</label>
@@ -132,8 +132,8 @@
                     </ul>
                 </fieldset>
                 <fieldset>
-                    <legend>Наполнители:</legend>
-                    <ul>
+                    <legend class="fillers-field-title">Наполнители:</legend>
+                    <ul class="fillers-field-list">
                         <li>
                             <input type="checkbox" name="chocolate-filling" id="chocolate-filling" checked>
                             <label for="chocolate-filling">шоколадные</label>
@@ -156,7 +156,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <button type="submit" class="products-filter-apply-btn">Применить</button>
+                <button type="submit" class="products-filter-btn">Применить</button>
             </form>
         </section>
         <section class="products">
