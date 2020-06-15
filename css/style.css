@@ -319,7 +319,7 @@ img {
 }
 
 .slider {
-    min-height: 500px;
+    margin-bottom: 40px;
 }
 
 .slider-list,
@@ -330,7 +330,23 @@ img {
     padding: 0;
 }
 
+.slider-list {
+    text-align: center;
+}
+
+.slider-item:nth-child(2),
+.slider-item:nth-child(3) {
+    display: none;
+}
+
+.slider-pagination {
+    display: flex;
+}
+
 .slider-item-title {
+    display: inline-block;
+    margin-top: 275px;
+
     font-size: 60px;
     line-height: 60px;
     font-weight: 700;
