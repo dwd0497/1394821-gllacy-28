@@ -107,52 +107,52 @@
                             <option value="by-fat">по жирности</option>
                         </select>
                     </fieldset>
-                    <fieldset>
-                        <legend>Цена:</legend><span>100 ₽ – 500 ₽</span>
+                    <fieldset class="price-field">
+                        <legend class="price-field-title">Цена:</legend><span>100 ₽ – 500 ₽</span>
                         <!--Здесь будет input с двумя ползунками-->
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="fat-field">
                         <legend class="fat-field-title">Жирность:</legend>
                         <ul class="fat-field-list">
                             <li>
-                                <input type="radio" name="fat" value="0%" id="fat-0">
+                                <input type="radio" name="fat" value="0%" id="fat-0" class="visually-hidden">
                                 <label for="fat-0">0%</label>
                             </li>
                             <li>
-                                <input type="radio" name="fat" value="up-to-10%" id="fat-up-to-10" checked>
+                                <input type="radio" name="fat" value="up-to-10%" id="fat-up-to-10" class="visually-hidden" checked>
                                 <label for="fat-up-to-10">до 10%</label>
                             </li>
                             <li>
-                                <input type="radio" name="fat" value="up-to-30%" id="fat-up-to-30">
+                                <input type="radio" name="fat" value="up-to-30%" id="fat-up-to-30" class="visually-hidden">
                                 <label for="fat-up-to-30">до 30%</label>
                             </li>
                             <li>
-                                <input type="radio" name="fat" value="above-30%" id="fat-above-30">
+                                <input type="radio" name="fat" value="above-30%" id="fat-above-30" class="visually-hidden">
                                 <label for="fat-above-30">выше 30%</label>
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="fillers-field">
                         <legend class="fillers-field-title">Наполнители:</legend>
                         <ul class="fillers-field-list">
                             <li>
-                                <input type="checkbox" name="chocolate-filling" id="chocolate-filling" checked>
+                                <input type="checkbox" name="chocolate-filling" id="chocolate-filling" class="visually-hidden" checked>
                                 <label for="chocolate-filling">шоколадные</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="sugar-powder-filling" id="sugar-powder-filling" checked>
+                                <input type="checkbox" name="sugar-powder-filling" id="sugar-powder-filling" class="visually-hidden" checked>
                                 <label for="sugar-powder-filling">сахарные присыпки</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="fruit-filling" id="fruit-filling">
+                                <input type="checkbox" name="fruit-filling" id="fruit-filling" class="visually-hidden">
                                 <label for="fruit-filling">фрукты</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="syrup-filling" id="syrup-filling">
+                                <input type="checkbox" name="syrup-filling" id="syrup-filling" class="visually-hidden">
                                 <label for="syrup-filling">сиропы</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="jam-filling" id="jam-filling">
+                                <input type="checkbox" name="jam-filling" id="jam-filling" class="visually-hidden">
                                 <label for="jam-filling">джемы</label>
                             </li>
                         </ul>
