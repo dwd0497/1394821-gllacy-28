@@ -24,7 +24,7 @@
                             <li class="site-nav-sublist-item"><a href="cream-ice-cream.html">Сливочное</a></li>
                             <li class="site-nav-sublist-item"><a href="">Щербеты</a></li>
                             <li class="site-nav-sublist-item"><a href="">Фруктовый лед</a></li>
-                            <li class="site-nav-sublist-item"><a href="">Мелори</a></li>
+                            <li class="site-nav-sublist-item"><a href="">Мелорин</a></li>
                         </ul>
                     </li>
                     <li class="site-nav-item"><a href="" class="site-nav-item-link">Доставка и оплата</a></li>
@@ -33,14 +33,14 @@
             </nav>
             <ul class="user-nav">
                 <li class="user-nav-item">
-                    <button aria-label="Поиск" class="user-nav-btn"></button>
+                    <button aria-label="Поиск" class="user-nav-btn user-nav-btn-search"></button>
                     <form action="https://echo.htmlacademy.ru" method="post" class="search-form">
                         <label for="search-form" class="visually-hidden">Поиск</label>
                         <input type="search" name="search-form" id="search-form" placeholder="Крем-брюле">
                     </form>
                 </li>
                 <li class="user-nav-item">
-                    <a href="" class="user-nav-btn">Вход</a>
+                    <a href="" class="user-nav-btn user-nav-btn-login">Вход</a>
                     <section class="popup-login">
                         <h2 class="visually-hidden">Вход в личный кабинет</h2>
                         <form action="https://echo.htmlacademy.ru" method="post">
@@ -54,15 +54,17 @@
                             </p>
                             <button type="submit" class="btn popup-login-entry-btn">Войти</button>
                         </form>
-                        <a href="" class="popup-login-link">Забыли пароль?</a>
-                        <a href="" class="popup-login-link">Новая регистрация</a>
+                        <div class="popup-login-list">
+                            <a href="" class="popup-login-link">Забыли пароль?</a>
+                            <a href="" class="popup-login-link">Новая регистрация</a>
+                        </div>
                     </section>
                 </li>
                 <li class="user-nav-item">
-                    <a href="" class="user-nav-btn">Корзина</a>
+                    <a href="" class="user-nav-btn user-nav-btn-cart">Пусто</a>
                 </li>
             </ul>
-            <p class="header-contacts">с 10 до 20, ежедневно <br>
+            <p class="header-contacts">с 10 до 20, ежедневно<br>
                 <a href="tel:+78124502525">8 812 450-25-25</a>
             </p>
         </header>
@@ -161,13 +163,13 @@
             <section class="advantages">
                 <h2 class="advantages-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</h2>
                 <ul class="advantages-list">
-                    <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
+                    <li class="advantages-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
                         проверенных временем технологий.</li>
-                    <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
-                        ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-                    <li>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+                    <li class="advantages-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
                         связывает долговременное сотрудничество.</li>
-                    <li>Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженому
+                    <li class="advantages-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
+                        ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+                    <li class="advantages-item">Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженому
                         растаять в пути и позволяет сохранить превосходный вкус.</li>
                 </ul>
             </section>
@@ -183,7 +185,7 @@
                         <label aria-label="Введите e-mail">
                             <input type="email" name="subscribe-email" id="subscribe-email" placeholder="email@example.com">
                         </label>
-                        <button type="submit" class="btn">Отправить</button>
+                        <button type="submit" class="btn blog-preview-btn">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -206,10 +208,10 @@
         </main>
         <footer class="footer">
             <ul class="socials-list">
-                <li class="socials-item"><a href="" aria-label="Глейси в Фейсбук"></a></li>
-                <li class="socials-item"><a href="" aria-label="Глейси в Вконтакте"></a></li>
-                <li class="socials-item"><a href="" aria-label="Глейси в Инстаграмм"></a></li>
-                <li class="socials-item"><a href="" aria-label="Глейси в Твиттер"></a></li>
+                <li class="socials-item"><a href="" aria-label="Глейси в Фейсбук" class="socials-item-link-facebook"></a></li>
+                <li class="socials-item"><a href="" aria-label="Глейси в Вконтакте" class="socials-item-link-vk"></a></li>
+                <li class="socials-item"><a href="" aria-label="Глейси в Инстаграмм" class="socials-item-link-instagram"></a></li>
+                <li class="socials-item"><a href="" aria-label="Глейси в Твиттер" class="socials-item-link-twitter"></a></li>
             </ul>
             <ul class="footer-nav-list">
                 <li class="footer-nav-item"><a href="" class="footer-nav-item-link">Для поставщиков</a></li>
