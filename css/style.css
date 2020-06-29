@@ -976,10 +976,10 @@ img {
     background-color: var(--basic-white);
 
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     right: 0;
-    bottom: 62px;
-    width: 263px;
+    bottom: 67px;
+    width: 253px;
     padding: 32px 25px;
     border-radius: 16px;
 }
@@ -1002,7 +1002,7 @@ img {
 
 .contacts p {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
 }
 
 .contact-information-tel {
@@ -1032,6 +1032,14 @@ img {
 
 .map img {
     width: 100%;
+    object-fit: cover;
+    height: 430px;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    z-index: 1;
 }
 
 
@@ -1103,11 +1111,16 @@ img {
     max-width: 330px;
     align-items: center;
     align-self: center;
+    margin-left: 40px;
 }
 
 .footer-nav-item {
     width: 50%;
     position: relative;
+}
+
+.footer-nav-item:nth-child(2n) {
+    margin-left: -20px;
 }
 
 .footer-nav-item-link {
@@ -1151,8 +1164,10 @@ img {
 
     font-size: 12px;
     justify-self: end;
-}
 
+    display: flex;
+    flex-direction: column;
+}
 
 .copyright-link {
     font: inherit;
@@ -1163,6 +1178,10 @@ img {
 .copyright-link:active,
 .copyright-link:focus {
     color: var(--active-link-light);
+}
+
+.copyright span {
+    margin-top: -5px;
 }
 
 .feedback-modal {
@@ -1185,6 +1204,7 @@ img {
     border-radius: 6px;
     display: none;
 }
+
 
 .feedback-form {
     display: flex;
@@ -1385,7 +1405,7 @@ img {
     -moz-appearance: none;
     appearance: none;
 
-    padding-right: 25px;
+    padding-right: 35px;
 
     background-image: url("../img/select-arrow.svg");
     background-repeat: no-repeat;
@@ -1438,7 +1458,7 @@ img {
     border: 2px solid var(--bg-white-opacity-8);
     border-radius: 3px;
     position: absolute;
-    top: -1px;
+    top: 2px;
 }
 
 .fillers-field-list input:checked+label::before {
@@ -1454,7 +1474,7 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    top: -1px;
+    top: 2px;
     left: 0px;
 }
 
@@ -1491,6 +1511,11 @@ img {
     border-radius: 20px;
 
     background: var(--bg-white-opacity-2);
+}
+
+.fillers-field-list {
+    margin-top: 2px;
+    padding-right: 21px;
 }
 
 .products-filter-btn {
