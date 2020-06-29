@@ -1444,7 +1444,7 @@ img {
     content: "";
     display: block;
     width: 24px;
-    height: 7px;
+    height: 20px;
     background-image: url("../img/checkbox-checked.svg");
     background-position: center;
     background-repeat: no-repeat;
