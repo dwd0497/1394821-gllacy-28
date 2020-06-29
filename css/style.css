@@ -605,7 +605,7 @@ img {
     grid-column: 4/5;
 
     margin-top: 2px;
-    z-index: 5;
+    z-index: 1;
 }
 
 .header-contacts a {
