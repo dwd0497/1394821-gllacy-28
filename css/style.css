@@ -475,6 +475,7 @@ img {
     top: calc(100% + 4px);
 
     display: none;
+    z-index: 3;
 }
 
 .search-form:hover,
@@ -696,6 +697,10 @@ img {
     background-color: transparent;
     border: 2px solid #ffffff;
     border-radius: 50%;
+}
+
+.slider-pagination-btn:not(.current) {
+    cursor: pointer;
 }
 
 .slider-pagination-btn.current {
