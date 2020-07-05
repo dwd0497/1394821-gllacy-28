@@ -5,6 +5,9 @@ var closeBtn = document.querySelector(".close-btn");
 var feedbackName = document.querySelector("#feedback-name");
 var feedbackEmail = document.querySelector("#feedback-email");
 var feedbackForm = document.querySelector(".feedback-form");
+var sliderBtns = document.querySelectorAll(".slider-pagination-btn");
+var sliederItems = document.querySelectorAll(".slider-item")
+var pageBody = document.querySelector(".page-body");
 
 
 feedbackBtn.addEventListener("click", function (evt) {
@@ -31,3 +34,45 @@ window.addEventListener("keydown", function (evt) {
         overlay.classList.remove("show-block");
     }
 });
+
+sliderBtns[0].addEventListener("click", function () {
+    pageBody.classList.remove("slide-2");
+    pageBody.classList.remove("slide-3");
+    pageBody.classList.add("slide-1");
+
+    sliderBtns[1].classList.remove("current");
+    sliderBtns[2].classList.remove("current");
+    sliderBtns[0].classList.add("current");
+
+    sliederItems[1].classList.remove("current");
+    sliederItems[2].classList.remove("current");
+    sliederItems[0].classList.add("current");
+})
+
+sliderBtns[1].addEventListener("click", function () {
+    pageBody.classList.remove("slide-1");
+    pageBody.classList.remove("slide-3");
+    pageBody.classList.add("slide-2");
+
+    sliderBtns[0].classList.remove("current");
+    sliderBtns[2].classList.remove("current");
+    sliderBtns[1].classList.add("current");
+
+    sliederItems[0].classList.remove("current");
+    sliederItems[2].classList.remove("current");
+    sliederItems[1].classList.add("current");
+})
+
+sliderBtns[2].addEventListener("click", function () {
+    pageBody.classList.remove("slide-1");
+    pageBody.classList.remove("slide-2");
+    pageBody.classList.add("slide-3");
+
+    sliderBtns[0].classList.remove("current");
+    sliderBtns[1].classList.remove("current");
+    sliderBtns[2].classList.add("current");
+
+    sliederItems[0].classList.remove("current");
+    sliederItems[1].classList.remove("current");
+    sliederItems[2].classList.add("current");
+})
