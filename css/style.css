@@ -36,6 +36,24 @@
     --input-outline-focus: rgba(46, 136, 228, 0.52);
 }
 
+@keyframes bounce {
+    0% {
+        transform: translate(-50%, -2000px);
+    }
+
+    70% {
+        transform: translate(-50%, 30px);
+    }
+
+    90% {
+        transform: translate(-50%, -10px);
+    }
+
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+
 body {
     min-width: 1200px;
     margin: 0;
@@ -984,12 +1002,6 @@ img {
     border-radius: 16px;
 }
 
-.contact-information {
-    font-size: 14px;
-    line-height: 20px;
-    margin: 0;
-}
-
 .contact-bold {
     font-size: 18px;
     line-height: 24px;
@@ -1001,12 +1013,15 @@ img {
 }
 
 .contacts p {
+    font-size: 14px;
+    line-height: 20px;
     margin: 0;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
 }
 
 .contact-information-tel {
     color: var(--text-dark);
+    margin-top: 3px;
 }
 
 .contact-information-tel:hover,
@@ -1037,7 +1052,6 @@ img {
 }
 
 .map iframe {
-    position: absolute;
     top: 0;
     z-index: 1;
     width: 100%;
@@ -1117,12 +1131,12 @@ img {
 }
 
 .footer-nav-item {
-    width: 50%;
+    width: 43%;
     position: relative;
 }
 
 .footer-nav-item:nth-child(2n) {
-    margin-left: -20px;
+    width: 57%;
 }
 
 .footer-nav-item-link {
@@ -1165,10 +1179,6 @@ img {
     margin: 0;
 
     font-size: 12px;
-    justify-self: end;
-
-    display: flex;
-    flex-direction: column;
 }
 
 .copyright-link {
@@ -1182,8 +1192,9 @@ img {
     color: var(--active-link-light);
 }
 
-.copyright span {
-    margin-top: -5px;
+.copyright-logo {
+    display: block;
+    margin-bottom: -3px;
 }
 
 .feedback-modal {
@@ -1195,7 +1206,7 @@ img {
 
     position: fixed;
 
-    top: 200px;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -1221,6 +1232,15 @@ img {
     z-index: 50;
 }
 
+.show-block {
+    display: block;
+}
+
+.show-block-bounce {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 0.6s;
+}
 
 .feedback-form {
     display: flex;

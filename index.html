@@ -239,10 +239,10 @@
                 <li class="footer-nav-item"><a href="" class="footer-nav-item-link">Экологические стандарты</a></li>
             </ul>
             <p class="copyright">
-                <a href="https://htmlacademy.ru/intensive/htmlcss">
+                <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-logo">
                     <img src="img/academy-logo.svg" width="108" height="39" alt="Логотип HTML Academy">
                 </a>
-                <span>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-link">HTML Academy</a> &#169; 2019</span>
+                Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-link">HTML Academy</a> &#169; 2019
             </p>
         </footer>
     </div>
@@ -254,11 +254,11 @@
         <form action="https://echo.htmlacademy.ru" method="post" class="feedback-form">
             <p>
                 <label for="feedback-name" class="visually-hidden">Введите ваше имя</label>
-                <input type="text" name="feedback-name" id="feedback-name" placeholder="Имя Фамилия">
+                <input type="text" name="feedback-name" id="feedback-name" placeholder="Имя Фамилия" required>
             </p>
             <p>
                 <label for="feedback-email" class="visually-hidden">Введите ваше имя</label>
-                <input type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com">
+                <input type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com" required>
             </p>
             <p>
                 <label for="feedback-message" class="visually-hidden">Напишите сообщение</label>
@@ -268,6 +268,8 @@
         </form>
         <button type="button" class="close-btn" aria-label="Закрыть"></button>
     </section>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
