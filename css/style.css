@@ -299,6 +299,7 @@ img {
 
 .site-nav-item-link::after {
     display: inline-block;
+    vertical-align: middle;
     content: "";
     height: 1px;
     width: calc(100% - 28px);
@@ -1056,6 +1057,7 @@ img {
     z-index: 1;
     width: 100%;
     height: 430px;
+    border: none;
 }
 
 
@@ -1853,6 +1855,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .arrow-right {
@@ -1863,6 +1866,7 @@ img {
     background-position: center;
     margin-right: -11px;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .catalog-pagination-item-link {
@@ -1872,6 +1876,7 @@ img {
     border-radius: 50%;
 
     display: inline-block;
+    vertical-align: middle;
     width: 26px;
     height: 26px;
 }
