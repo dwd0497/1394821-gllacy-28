@@ -21,7 +21,7 @@
                         <a href="" class="site-nav-item-link current">Каталог</a>
                         <ul class="site-nav-sublist">
                             <li class="site-nav-sublist-item"><a href="">Новинки</a></li>
-                            <li class="site-nav-sublist-item"><a>Сливочное</a></li>
+                            <li class="site-nav-sublist-item current"><a>Сливочное</a></li>
                             <li class="site-nav-sublist-item"><a href="">Щербеты</a></li>
                             <li class="site-nav-sublist-item"><a href="">Фруктовый лед</a></li>
                             <li class="site-nav-sublist-item"><a href="">Мелорин</a></li>
@@ -44,7 +44,7 @@
                     </form>
                 </li>
                 <li class="user-nav-item user-nav-item-login">
-                    <a href="" class="user-nav-btn user-nav-btn-login">
+                    <a href="login.html" class="user-nav-btn user-nav-btn-login">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.04 14.88L12.96 9.5L6.04 4.13V7.04H0V11.96H6.04V14.88Z" />
                             <path d="M18 0H5C4.46957 0 3.96086 0.210714 3.58579 0.585786C3.21071 0.960859 3 1.46957 3 2V4H5V2H18V17H5V15H3V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H18C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17V2C20 1.46957 19.7893 0.960859 19.4142 0.585786C19.0391 0.210714 18.5304 0 18 0Z" />
@@ -71,7 +71,7 @@
                     </section>
                 </li>
                 <li class="user-nav-item user-nav-item-cart filled">
-                    <a href="" class="user-nav-btn user-nav-btn-cart filled">
+                    <a href="cart.html" class="user-nav-btn user-nav-btn-cart filled">
                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.70345 2L5.46161 0H0V2H3.66795L5.17946 15H19.2869L21 2H5.70345ZM17.5034 13H6.97313L5.96545 4H18.6924L17.5034 13Z" />
                             <path d="M7.03359 20C8.14664 20 9.04894 19.1046 9.04894 18C9.04894 16.8954 8.14664 16 7.03359 16C5.92054 16 5.01823 16.8954 5.01823 18C5.01823 19.1046 5.92054 20 7.03359 20Z" />
@@ -84,16 +84,16 @@
                         <h2 class="visually-hidden">Корзина</h2>
                         <table class="cart-table">
                             <tr class="cart-table-row">
-                                <td aria-label="Удалить" class="delete-btn"></td>
-                                <td class="cart-item-img"><img src="img/item-1.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33"></td>
-                                <td class="cart-item-name">Пломбир с апельсиновым джемом</td>
+                                <td><button aria-label="Удалить" class="delete-btn"></button></td>
+                                <td class="cart-item-img"><a href=""><img src="img/item-1.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33"></a></td>
+                                <td class="cart-item-name"><a href="">Пломбир с апельсиновым джемом</a></td>
                                 <td class="cart-item-price">1,5 кг х <span>200 руб.</span></td>
                                 <td class="cart-item-total">300 руб.</td>
                             </tr>
                             <tr class="cart-table-row">
-                                <td aria-label="Удалить" class="delete-btn"></td>
-                                <td class="cart-item-img"><img src="img/item-3.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33"></td>
-                                <td class="cart-item-name">Клубничный пломбир с присыпкой<br>из белого шоколада</td>
+                                <td><button aria-label="Удалить" class="delete-btn" type="button"></button></td>
+                                <td class="cart-item-img"><a href=""><img src="img/item-3.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33"></a></td>
+                                <td class="cart-item-name"><a href="">Клубничный пломбир с присыпкой<br>из белого шоколада</a></td>
                                 <td class="cart-item-price">1,5 кг х <span>300 руб.</span></td>
                                 <td class="cart-item-total">450 руб.</td>
                             </tr>
@@ -369,6 +369,7 @@
             </p>
         </footer>
     </div>
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>

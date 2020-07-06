@@ -8,7 +8,17 @@ var feedbackForm = document.querySelector(".feedback-form");
 var sliderBtns = document.querySelectorAll(".slider-pagination-btn");
 var sliederItems = document.querySelectorAll(".slider-item")
 var pageBody = document.querySelector(".page-body");
+var loginBtn = document.querySelector(".user-nav-btn-login");
+var cartBtn = document.querySelector(".user-nav-btn-cart");
 
+
+loginBtn.addEventListener("click", function (evt) {
+    evt.preventDefault();
+});
+
+cartBtn.addEventListener("click", function (evt) {
+    evt.preventDefault();
+});
 
 feedbackBtn.addEventListener("click", function (evt) {
     evt.preventDefault();

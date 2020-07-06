@@ -23,6 +23,7 @@
     --site-bg-3: #9D8B84;
 
     --bg-white-opacity-2: rgba(255, 255, 255, 0.2);
+    --bg-white-opacity-4: rgba(255, 255, 255, 0.4);
     --bg-white-opacity-5: rgba(255, 255, 255, 0.5);
     --bg-white-opacity-7: rgba(255, 255, 255, 0.7);
     --bg-white-opacity-8: rgba(255, 255, 255, 0.8);
@@ -32,8 +33,28 @@
     --price-shadow: rgba(49, 50, 53, 0.5);
     --active-class-shadow: #696969;
 
+    --outline-color: #6997C6;
     --input-outline-basic: rgba(178, 178, 178, 0.52);
     --input-outline-focus: rgba(46, 136, 228, 0.52);
+
+    --sublist-item-hover: #FBDED7;
+    --sublist-item-active: #F6B5A5;
+    --sublist-item-current: #D07058;
+
+    --close-btn-color: #333333;
+
+    --range-scale-color: #d7dcde;
+    --range-toggle-color: #ababab;
+    --range-toggle-shadow: #cfcfcf;
+
+    --cart-row-line: #CACAC7;
+
+    --promotion-bg-raspberry: #4E0D1D;
+    --promotion-bg-chocolate: #3A2217;
+
+    --subscribe-gradient-milky: #f8f7f4;
+    --subscribe-gradient-blue: #92cdff;
+    --subscribe-gradient-red: #fe9e90;
 }
 
 @keyframes bounce {
@@ -59,7 +80,7 @@ body {
     margin: 0;
     padding: 0;
 
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 22px;
     color: var(--basic-white);
@@ -327,7 +348,7 @@ img {
 .site-nav-item-link.current {
     color: var(--basic-white);
 
-    background-color: #D07058;
+    background-color: var(--sublist-item-current);
 }
 
 .site-nav-item-link.current::after {
@@ -352,11 +373,11 @@ img {
 
 .site-nav-sublist-item:hover,
 .site-nav-sublist-item:focus {
-    background-color: #FBDED7
+    background-color: var(--sublist-item-hover);
 }
 
 .site-nav-sublist-item:active {
-    background-color: #F6B5A5
+    background-color: var(--sublist-item-active);
 }
 
 .site-nav-sublist-item:nth-child(1) {
@@ -376,6 +397,10 @@ img {
     bottom: -1px;
     left: 6px;
     right: 9px;
+}
+
+.site-nav-sublist-item.current {
+    background-color: var(--sublist-item-current);
 }
 
 .user-nav {
@@ -714,7 +739,7 @@ img {
     width: 21px;
     height: 21px;
     background-color: transparent;
-    border: 2px solid #ffffff;
+    border: 2px solid var(--basic-white);
     border-radius: 50%;
 }
 
@@ -723,9 +748,12 @@ img {
 }
 
 .slider-pagination-btn.current {
-    background-color: #ffffff;
+    background-color: var(--basic-white);
 }
 
+.slider-pagination-btn:hover:not(.current) {
+    background-color: var(--bg-white-opacity-4);
+}
 
 .promotion {
     margin-bottom: 40px;
@@ -754,7 +782,7 @@ img {
 .promotion-item:nth-child(1) {
     color: var(--basic-white);
 
-    background-color: #4E0D1D;
+    background-color: var(--promotion-bg-raspberry);
     background-image: url("../img/raspberry-bg.jpg");
     background-size: cover;
 }
@@ -762,7 +790,7 @@ img {
 .promotion-item:nth-child(2) {
     color: var(--basic-white);
 
-    background-color: #3A2217;
+    background-color: var(--promotion-bg-chocolate);
     background-image: url("../img/chocolate-bg.jpg");
     background-size: cover
 }
@@ -930,12 +958,12 @@ img {
     padding: 6px;
     border-radius: 16px;
     color: var(--text-light-dark);
-    background-image: linear-gradient(#F8F7F4, #F8F7F4),
+    background-image: linear-gradient(var(--subscribe-gradient-milky), var(--subscribe-gradient-milky)),
         repeating-linear-gradient(-45deg,
-            #92cdff 0, #92cdff 9px,
-            #f8f7f4 9px, #f8f7f4 18px,
-            #fe9e90 18px, #fe9e90 27px,
-            #f8f7f4 27px, #f8f7f4 36px);
+            var(--subscribe-gradient-blue), var(--subscribe-gradient-blue) 9px,
+            var(--subscribe-gradient-milky), var(--subscribe-gradient-milky),
+            var(--subscribe-gradient-red) 18px, var(--subscribe-gradient-red) 27px,
+            var(--subscribe-gradient-milky) 27px, var(--subscribe-gradient-milky) 36px);
     background-clip: content-box, padding-box;
 }
 
@@ -1336,7 +1364,7 @@ img {
     content: "";
     height: 100%;
     width: 2px;
-    background-color: #333;
+    background-color: var(--close-btn-color);
     top: 0;
     left: 8px;
 }
@@ -1386,7 +1414,7 @@ img {
 .range-controls .scale {
     position: relative;
     height: 2px;
-    background: #d7dcde;
+    background: var(--range-scale-color);
 }
 
 .range-controls .bar {
@@ -1404,10 +1432,10 @@ img {
     width: 4px;
     height: 4px;
     padding: 0;
-    border: 8px solid #ffffff;
-    background-color: #ababab;
+    border: 8px solid var(--basic-white);
+    background-color: var(--range-scale-color);
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 #cfcfcf;
+    box-shadow: 0 2px 1px 0 var(--range-toggle-shadow);
     cursor: pointer;
 }
 
@@ -1489,7 +1517,7 @@ img {
 }
 
 .fat-field-list input:focus+label::before {
-    outline: 2px solid #6997C6;
+    outline: 2px solid var(--outline-color);
 }
 
 
@@ -1523,7 +1551,7 @@ img {
 
 .fillers-field-list input:focus+label::after,
 .fillers-field-list input:focus+label::before {
-    outline: 2px solid #6997C6;
+    outline: 2px solid var(--outline-color);
 }
 
 .products-filter select:hover,
@@ -1674,16 +1702,20 @@ img {
 }
 
 .cart-table-row:last-child {
-    border-bottom: 1px solid #CACAC7;
+    border-bottom: 1px solid var(--cart-row-line);
 }
 
 .cart-table-row .delete-btn {
     width: 15px;
     height: 15px;
     margin-right: 9px;
+    background-color: transparent;
     background-image: url("../img/cross.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    border: none;
+    cursor: pointer;
 }
 
 .cart-item-img {
@@ -1692,6 +1724,16 @@ img {
 
 .cart-item-name {
     margin-right: 30px;
+}
+
+.cart-item-name a {
+    font: inherit;
+    color: var(--text-dark);
+}
+
+.cart-item-name a:hover,
+.cart-item-name a:active {
+    color: var(--active-link-dark);
 }
 
 .cart-item-price {
@@ -1743,13 +1785,14 @@ img {
 
 .products {
     position: relative;
+    margin-bottom: 8px;
 }
 
 .products-list {
     list-style: none;
 
     margin: 0;
-    margin-bottom: 43px;
+    margin-bottom: 40px;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1794,9 +1837,10 @@ img {
     font-size: 16px;
     text-align: center;
     font-weight: 500;
-    margin: 0;
+    margin: 0 auto;
     padding: 25px 0;
     padding-bottom: 10px;
+    width: 257px;
 }
 
 .product-card-price {
@@ -1844,7 +1888,7 @@ img {
     display: flex;
     justify-content: flex-end;
 
-    padding-bottom: 26px;
+    padding-bottom: 31px;
     border-bottom: 1px solid var(--bg-white-opacity-2);
 }
 
