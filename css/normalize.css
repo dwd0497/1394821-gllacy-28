@@ -218,6 +218,7 @@ sup {
 audio,
 video {
     display: inline-block;
+    vertical-align: middle;
 }
 
 /**
@@ -464,6 +465,7 @@ summary {
 
 canvas {
     display: inline-block;
+    vertical-align: middle;
 }
 
 /**

@@ -1050,6 +1050,11 @@ img {
     width: 100%;
     object-fit: cover;
     height: 430px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .map iframe {
@@ -1455,7 +1460,7 @@ img {
 }
 
 
-.products-filter label {
+.products-filter label:not(.sorting-label) {
     padding-left: 33px;
     position: relative;
 }
