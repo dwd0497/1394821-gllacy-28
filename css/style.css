@@ -55,6 +55,12 @@
     --subscribe-gradient-milky: #f8f7f4;
     --subscribe-gradient-blue: #92cdff;
     --subscribe-gradient-red: #fe9e90;
+
+    --slider-highlighting: rgba(215, 242, 227, 0.75);
+
+    --sublist-accent-line: rgba(50, 50, 50, 0.2);
+
+    --overlay-color: rgba(0, 0, 0, 0.3);
 }
 
 @keyframes bounce {
@@ -191,17 +197,17 @@ img {
 }
 
 .page-body.slide-1 {
-    background-image: url("../img/icecream-slider-1.png"), radial-gradient(circle 554px at center 358px, rgba(215, 242, 227, 0.75) 108px, transparent);
+    background-image: url("../img/icecream-slider-1.png"), radial-gradient(circle 554px at center 358px, var(--slider-highlighting) 108px, transparent);
     background-color: var(--site-bg-1);
 }
 
 .page-body.slide-2 {
-    background-image: url("../img/icecream-slider-2.png"), radial-gradient(circle 554px at center 358px, rgba(215, 242, 227, 0.75) 108px, transparent);
+    background-image: url("../img/icecream-slider-2.png"), radial-gradient(circle 554px at center 358px, var(--slider-highlighting) 108px, transparent);
     background-color: var(--site-bg-2);
 }
 
 .page-body.slide-3 {
-    background-image: url("../img/icecream-slider-3.png"), radial-gradient(circle 554px at center 358px, rgba(215, 242, 227, 0.75) 108px, transparent);
+    background-image: url("../img/icecream-slider-3.png"), radial-gradient(circle 554px at center 358px, var(--slider-highlighting) 108px, transparent);
     background-color: var(--site-bg-3);
 }
 
@@ -393,7 +399,7 @@ img {
     content: "";
     height: 1px;
     position: absolute;
-    background-color: rgba(50, 50, 50, 0.2);
+    background-color: var(--sublist-accent-line);
     bottom: -1px;
     left: 6px;
     right: 9px;
@@ -1262,7 +1268,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--overlay-color);
     display: none;
     z-index: 50;
 }
